@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Deluxe Saloon</title>
+  <meta name="description" content="An old-school Indian saloon, always open.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="saloon" aria-label="Indian Deluxe Saloon">
+    <div class="grain"></div>
+    <div class="warm-glow"></div>
+
+    <header class="sign">
+      <div class="sign-small">EST. SOMEWHERE IN INDIA</div>
+      <h1>INDIAN<br><span>DELUXE</span> SALOON</h1>
+      <div class="sign-line">HAIR • SHAVE • CHAI • GUPSHUP</div>
+    </header>
+
+    <div class="ceiling">
+      <div class="fan">
+        <div class="fan-hub"></div>
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="tube-light"></div>
+    </div>
+
+    <section class="back-wall">
+      <div class="calendar">
+        <b>CALENDAR</b>
+        <strong>1994</strong>
+        <small>आज का दिन<br>अच्छा है</small>
+      </div>
+
+      <div class="mirror">
+        <div class="mirror-top">DELUXE</div>
+        <div class="reflection">
+          <div class="ref-head"></div>
+          <div class="ref-body"></div>
+        </div>
+        <div class="mirror-shine"></div>
+      </div>
+
+      <div class="poster">
+        <span>बाल कटाओ</span>
+        <strong>STYLE<br>SE<br>BAITHO</strong>
+        <small>₹ • ₹ • ₹</small>
+      </div>
+
+      <div class="shelf">
+        <div class="bottle bottle-red"></div>
+        <div class="bottle bottle-green"></div>
+        <div class="bottle bottle-cream"></div>
+        <div class="comb"></div>
+        <div class="powder"></div>
+      </div>
+    </section>
+
+    <section class="shop-floor">
+      <div class="bench">
+        <div class="bench-seat"></div>
+        <div class="bench-back"></div>
+        <div class="leg l1"></div><div class="leg l2"></div>
+        <div class="person person-one">
+          <div class="head"></div><div class="shirt"></div>
+          <div class="arm"></div>
+        </div>
+        <div class="person person-two">
+          <div class="head"></div><div class="shirt"></div>
+          <div class="arm"></div>
+        </div>
+      </div>
+
+      <div class="newspaper">
+        <div class="paper-title">आज की खबर</div>
+        <div class="paper-lines"></div>
+      </div>
+
+      <div class="barber-area">
+        <div class="chair">
+          <div class="chair-head"></div>
+          <div class="chair-back"></div>
+          <div class="chair-seat"></div>
+          <div class="chair-arm a1"></div><div class="chair-arm a2"></div>
+          <div class="chair-base"></div>
+        </div>
+
+        <div class="customer">
+          <div class="customer-head"></div>
+          <div class="customer-body"></div>
+        </div>
+
+        <div class="barber">
+          <div class="barber-head"></div>
+          <div class="barber-body"></div>
+          <div class="barber-arm barber-arm-1"></div>
+          <div class="barber-arm barber-arm-2"></div>
+          <div class="scissors">✂</div>
+        </div>
+      </div>
+
+      <div class="counter">
+        <div class="radio">
+          <div class="radio-speaker"></div>
+          <div class="radio-dial"></div>
+          <div class="radio-light"></div>
+        </div>
+        <div class="cup"></div>
+        <div class="counter-top"></div>
+      </div>
+
+      <div class="door">
+        <div class="door-sign">OPEN</div>
+        <div class="door-glass"></div>
+        <div class="door-handle"></div>
+      </div>
+
+      <div class="floor-shadow"></div>
+    </section>
+
+    <div class="intro-copy">
+      <span>BAITHIYE.</span>
+      <p>Radio chal raha hai.</p>
+    </div>
+
+    <!-- YouTube API target. It stays visually unobtrusive; the bottom player controls it. -->
+    <div id="youtube-player" aria-hidden="true"></div>
+
+    <section class="music-player" aria-label="Music player">
+      <div class="player-brand">
+        <div class="mini-radio"><i></i></div>
+        <div>
+          <small>INDIAN DELUXE RADIO</small>
+          <strong id="track-label">PRESS PLAY TO START</strong>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button id="prev" title="Previous" aria-label="Previous">◀◀</button>
+        <button id="play" class="play" title="Play" aria-label="Play">▶</button>
+        <button id="next" title="Next" aria-label="Next">▶▶</button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-track"><div id="progress"></div></div>
+        <div class="time"><span id="current">0:00</span><span id="duration">0:00</span></div>
+      </div>
+
+      <div class="volume">
+        <span>VOL</span>
+        <input id="volume" type="range" min="0" max="100" value="65" aria-label="Volume">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
